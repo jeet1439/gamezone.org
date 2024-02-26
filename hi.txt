@@ -1,0 +1,7 @@
+<div class="left2">
+            <img src="./images/Rectangle 57.png" alt="">
+        </div>
+        <div class="right2">
+            <h3>A War Game That <br> Will Get Your Adrenaline <br> Pumping</h3>
+            <p>This is the best episode that we present to you,we collect <br> all over asia and we present it to you only for you,our special customer, this is an <br> episode of thrill and enjoyment.</p>
+        </div>

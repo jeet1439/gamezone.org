@@ -86,7 +86,7 @@ nav ul li a{
 
 .section1 .mainset{
     color: #fff;
-    width: 80%;
+    width: 90%;
     position: relative;
     top: 30%;
     left: 9%;
@@ -95,8 +95,13 @@ nav ul li a{
   font-size: 3rem;
   line-height: 4rem;
 }
+@media only screen and (max-width:437px){
+    .section1 .mainset h1{
+        font-size: 2.5rem;
+      }  
+}
 .mainset p{
-    color: gainsboro;
+    color: #c2bcbc;
     margin-top: 20px;
 }
 .btn {
@@ -121,27 +126,146 @@ nav ul li a{
     color: white;
 }
 .get-started:hover {
-    background-color: #ff8706; 
+    background-color: #ff7206; 
 }
 .learn-more {
     background-color:rgba(0, 0, 0, 0);
     color: white;
 }
 .learn-more:hover {
-    background-color: #ff8706;
+    background-color: #ff7206;
+}
+
+.right{
+    position: absolute;
+    right: 10%;
+    bottom: 1%;
+    height: 25%;
+    width: 19%; 
+}
+@media only screen and (max-width:996px){
+    .section1 .right{
+        display: none;
+      }  
+}
+
+.right h6{
+    color: white;
+    font-size: 1.5rem;
 }
 .section2{
     height: 100vh;
     width: 100%;
-    background-color: aliceblue;
+    background-color: #ebf9ff;
+}
+.heading{
+    padding-top: 40px;
+    line-height: 27px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.section2 .gamecontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+    margin:40px;
+}
+
+.section2 .gamecontainer .box1{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    height: 350px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.gamecontainer .box1 .about{
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    top: 73%;
+    color: white;
+    height: 95px;
+    display: flex;
+    gap: 15px;
+    padding-top: 18px;
+    border-radius: 0 0 5px 5px;
+}
+
+.box1:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) 
+}
+.about img{
+    height: 20px;
+}
+.star{
+    display: flex;
+    flex-direction: row;
+}
+.about .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+.about .right1 .download{
+    font-size: 17px;
+    padding: 11px 21px;
+    color: #fff;
+    background-color: #ff7206;
+    cursor: pointer;
+    border: none;
+}
+#box1{
+    background: url(./images/image\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#box2{
+    background: url(./images/image\ 4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+#box3{
+    background: url(./images/image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+#box4{
+    background: url(./images/image\ 3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+@media only screen and (max-width:1204px){
+    .section2{
+        height: 135vh;
+    }
+}
+@media only screen and (max-width:630px){
+    .section2{
+        height: 245vh;
+    }
 }
 .section3{
     height: 100vh;
     width: 100%;
     background-color: antiquewhite;
 }
+.section3 .left2 img{
+    height: 40px;
+}
 .section4{
     height: 100vh;
     width: 100%;
     background-color: aquamarine;
 }
+
+
+
+
+
