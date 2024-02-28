@@ -51,6 +51,7 @@ nav ul li a{
 }
 .logo img{
     height: 40px;
+    margin-top: 11px;
 }
 
 .buttons {
@@ -83,6 +84,38 @@ nav ul li a{
 .sign-up-btn:hover {
     background-color: #ff8706;
 }
+/*responsive navbar*/
+.hamburger{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 2px;
+}
+@media only screen and (max-width:905px){
+   nav ul{
+    display: none;
+   }
+   .buttons{
+    display: none;
+   }
+   .hamburger{
+    display: block;
+   }
+}
+
+
+
+
 
 .section1 .mainset{
     color: #fff;
@@ -439,22 +472,193 @@ nav ul li a{
     font-size: 1.4rem;
 }
 .section4{
-    height: 120vh;
+    height: 95vh;
     width: 100%;
     background-color: #f8fafb;
 }
 .section5{
-    height: 100vh;
+    height: 140vh;
     width: 100%;
-    background-color: rgb(127, 180, 255);
+    background-color: #000;
 }
+.head{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    padding-top: 30px;
+}
+.section5 .child{
+    display: flex;
+    flex-direction: row;
+    height: 390px;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 30px;
+}
+.section5 .child .box4{
+    height: 90%;
+    width: 25%;
+    background-color: #c2bcbc;
+    transition: 0.3s ease-in;
+}
+#one{
+    background: url(./images/Rectangle\ 17.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#two{
+    background: url(./images/Rectangle\ 18.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#three{
+    background: url(./images/Rectangle\ 90.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.child > :nth-child(2){
+    margin-top: 20%;
+}
+.child > :nth-child(3){
+    margin-top: 40%;
+}
+
+.section5 .child .box4:hover{
+    transform: scale(1.04); 
+}
+@media screen and (max-width: 617px){
+    .child > :nth-child(2){
+        margin-top: 0%;
+    }
+    .child > :nth-child(3){
+        margin-top: 0%;
+    }
+    .section5{
+        height: 90vh;
+    }
+}
+@media screen and (max-width: 430px){
+    .section5 .child{
+        display: flex;
+        flex-direction: column;
+    }
+    .section5 .child .box4{
+        width: 70%;
+    }
+    
+}
+
 .section6{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
-    background-color: rgb(105, 38, 80);
+    overflow: hidden;
+    background: black;
+}
+.flexbox2{
+    position: relative;
+    text-align: center;
+    color: wheat;
+    margin-top: -30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.section6 img{
+    width: 100%;
+    display: block;
+    filter: blur(2px);
+    filter: brightness(40%);  
+}
+.section6 .flexbox2 h2{
+    font-size: 3rem;
+    color: #fff;
+}
+.footerlogo img{
+    height: 20px;
+}
+.section6 .flexbox2 p{
+    color: #c2bcbc;
+    padding-top: 20px;
+}
+.section6 .flexbox2 button{
+    padding: 15px 30px;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #ff7206;
+    color: #fff;
+    margin-top: 12px;
+    transition: 0.1s ease-in;
+}
+.section6 .flexbox2 button:hover{
+    padding: 17px 32px;
+}
+@media screen and (max-width: 863px){
+    .section6 .flexbox2 h2{
+        font-size: 2rem;
+    }
+
+}
+@media screen and (max-width: 886px){
+    .section5{
+        height: 100vh;
+    }
+}
+.section6 .footer{
+    position: relative;
+    display: flex;
+    background-color: #000;
+    flex-direction: row;
+    height: 70%;
+    margin-top: 25px;
+    gap: 8%;
+    justify-content: center;
+    padding-top: 4%;
+}
+.section6 .footer .elements {
+    display: flex;
+    flex-direction: column;
+    color: #c2bcbc;
+    gap: 20px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+}
+.footerlogo {
+    width: 30px;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.elements {
+    flex: 1;
+    min-width: 100px; 
+    margin: 10px;
+    transition: 0.2s ease-in-out;   
+}
+.elements p{
+    transition: 0.2s ease-in-out;   
+}
 
+@media screen and (max-width: 300px) {
+    .elements {
+        flex-basis: 100%; 
+    }
+}
+.footer .elements p:hover{
+    padding-left:3px ;
+}
 
 
 
